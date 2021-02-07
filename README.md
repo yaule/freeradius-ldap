@@ -10,7 +10,7 @@ docker run -it --rm --name freeradius-ldap \
         -e RADIUS_LDAP_ADMIN_DN='cn=admin,dc=samba,dc=com' \
         -e RADIUS_LDAP_BASE_DN=ou=users,dc=samba,dc=com \
         -e RADIUS_LDAP_PASSWD=password \
-        freeradius
+        kasen/freeradius-ldap
 ```
 
 ```sh
@@ -20,7 +20,7 @@ docker run -it --rm --name freeradius-ldap \
         -v $(pwd)/mods-available-ldap:/etc/freeradius/3.0/mods-available/ldap \
         -v $(pwd)/mods-available-eap:/etc/freeradius/3.0/mods-available/eap:ro \
         -v $(pwd)/clients.conf:/etc/freeradius/3.0/clients.conf:ro \
-        freeradius
+        kasen/freeradius-ldap
 
 ```
 
