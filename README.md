@@ -27,4 +27,4 @@ docker run -it --rm --name freeradius-ldap \
 
 # test auth
 
-    echo "User-Name=testuser,User-Password=testpasswd" | radclient localhost:1812 auth papayaradius
+    echo "User-Name=testuser,User-Password=testpasswd" | radclient localhost:1812 auth radiussecret
